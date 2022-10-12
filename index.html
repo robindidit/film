@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <title>robin did it</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Robin Häberer">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" type="image/x-icon" href="robin_didiit_00113 - Kopie.png">
+
+  <style media="all">
+
+.logis {display:none}
+.logi {display:block}
+@media (max-width:1201px){
+  .logi {display:none}
+  .logis {display:block}
+}
+.schri {display:none}
+.schr {display:block}
+@media (max-width:1201px){
+  .schr {display:none}
+  .schri {display:block}
+}
+.ichi {display:none}
+.ich {display:block}
+@media (max-width:1201px){
+  .ich {display:none}
+  .ichi {display:block}
+}
+.fra1 {display:none}
+.fra {display:block}
+@media (max-width:1201px){
+  .fra {display:none}
+  .fra1 {display:block}
+}
+.text1 {display:none}
+.text {display:block}
+@media (max-width:1201px){
+  .text {display:none}
+  .text1 {display:block}
+}
+.vid1 {display:none}
+.vid {display:block}
+@media (max-width:1201px){
+  .vid {display:none}
+  .vid1 {display:block}
+}
+.prev1 {display:none}
+.prev {display:block}
+@media (max-width:1201px){
+  .prev {display:none}
+  .prev1 {display:block}
+}
+.next1 {display:none}
+.next {display:block}
+@media (max-width:1201px){
+  .next {display:none}
+  .next1 {display:block}
+}
+.prev2 {display:none}
+.prev {display:block}
+@media (max-width:1201px){
+  .prev {display:none}
+  .prev2 {display:block}
+}
+.next2 {display:none}
+.next {display:block}
+@media (max-width:1201px){
+  .next {display:none}
+  .next2 {display:block}
+}
+  * {
+        box-sizing: border-box
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+      .mySlides {
+        display: none
+      }
+      .mySlides1 {
+        display: none
+      }
+      img {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 51%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+          .prev1,
+            .next1 {
+              cursor: pointer;
+              position: absolute;
+              top: 51%;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: white;
+              font-weight: bold;
+              font-size: 35px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+            /* Position the "next button" to the right */
+            .next1 {
+              right: 0%;
+              border-radius: 3px 0 0 3px;
+            }
+            /* On hover, add a black background color with a little bit see-through */
+            .prev1:hover,
+            .next1:hover {
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+
+  .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #1A1A1A;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #0E0E0E;
+      }
+      .dot1 {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #1A1A1A;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot1:hover {
+        background-color: #0E0E0E;
+      }
+      .dot2 {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #1A1A1A;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot2:hover {
+        background-color: #0E0E0E;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 200px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 9px
+        }
+      }
+
+  </style>
+
+
+</head>
+<body style="overflow:hidden;">
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="Global" style="position:absolute; left: 5.5%; top: 31%; width:90%; height:auto%;"  >
+  </a>
+  <p class="device-notification--message">Ich hab dir so viel zu zeigen. Damit auch alles hier rein passt, musst du dein Smartphone auf Querformat drehen. <br><br><br><br><br><br><br> Filme geniest man am besten auf einem großen Bildschirm!</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <div class="logi">
+        <header class="header">
+          <a class="header--logo" href="index.html">
+            <img src="assets/img/logo.png" alt="Global" width="auto" height="120%" style="position:absolute; left: 0%; top: 25px; opacity: 1;">
+          </a>
+          <button style="position:fixed; top:9%; left:70%;" class="header--cta cta">Schreib mir</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        </div>
+        <div class="logis">
+        <header class="header">
+          <a class="header--logo" href="index.html">
+            <img src="assets/img/logo.png" alt="Global" width="auto" height="87%" style="position:absolute; left: -0.1%; top: 9px; opacity: 1;">
+          </a>
+          <button style="position:fixed; top:9%; left:70%;" class="header--cta cta">Schreib mir</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        </div>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>robin did it</span></li>
+            <li><span>Musikvideos</span></li>
+            <li><span>Aftermovies</span></li>
+            <li><span>Kurzfilme</span></li>
+            <li><span>Schreib mir</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner" >
+                <div class="schr" >
+                <h1 style="position:absolute; top:14%; opacity: 0.9;">The Movie<br>to your<br>
+                  <span style="opacity: 0.5;"
+                   class="txt-rotate"
+                         data-period="1700"
+                         data-rotate='[ "Music.", "Party.", "Business.", "Soul." ]'>
+                       </span>
+</h1>
+</div>
+<div class="schri" >
+<h1 style="position:absolute; top:19%; left:6%; opacity: 0.9;">The Movie<br>to your<br>
+  <span style="opacity: 0.5;"
+   class="txt-rotate"
+         data-period="1700"
+         data-rotate='[ "Music.", "Party.", "Business.", "Soul." ]'>
+       </span>
+</h1>
+</div>
+
+<script> var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+</script>
+                <div class="ich">
+                <img src="assets/img/introduction-visual.png" alt="Welcome" width="auto" height="auto" style="position:absolute; left:28.8%; bottom:4.9%; opacity: 0.8;">
+                </div>
+                <div class="ichi">
+                <img src="assets/img/introduction-visual.png" alt="Welcome" width="75%" height="auto" style="position:absolute; left:44%; bottom:5%; opacity: 0.8;">
+                </div>
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>Filmemacher</h3>
+                  <p>in Berlin</p>
+                </a>
+                <a href="#0">
+                  <h3>Schlafen</h3>
+                  <p>können wir, wenn wir tot sind </p>
+                </a>
+                <a href="https://www.instagram.com/robin.didit/">
+                  <h3>Robin Häberer</h3>
+                  <p>24</p>
+                  <br><br>
+                </a>
+              </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Beatsklopper - Squad</div>
+        <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Beatsklopper - Squad</div>
+    <div class="vid"> <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/710464041?h=5d306b6bc0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Squad"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+  <div class="vid1"> <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/710464041?h=5d306b6bc0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Squad"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+      </div>
+      <div class="mySlides fade">
+        <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Makro22 - Bruder</div>
+        <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Makro22 - Bruder</div>
+      <div class="vid"> <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/710465988?h=fc1ce891ed&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="preview_04"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+      <div class="vid1"> <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/710465988?h=fc1ce891ed&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="preview_04"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+      </div>
+      <div class="mySlides fade">
+        <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">RIA - Late Night</div>
+        <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">RIA - Late Night</div>
+        <div class="vid"> <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/710465323?h=eef2c7f2e4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Late Night"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        <div class="vid1"> <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/710465323?h=eef2c7f2e4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Late Night"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+      </div>
+			<div class="mySlides fade">
+        <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">RIA - Stone Cold Stunner</div>
+        <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">RIA - Stone Cold Stunner</div>
+			<div class="vid">	<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754459774?h=6ea3a6a85e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Stone Cold Stunner.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+      <div class="vid1">	<div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754459774?h=6ea3a6a85e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Stone Cold Stunner.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+      </div>
+      <div class="mySlides fade">
+        <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Makro22 - HaagDen</div>
+        <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Makro22 - HaagDen</div>
+    <div class="vid">  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754465739?h=8de042a551&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HaagDen.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754465739?h=8de042a551&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="HaagDen.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+      </div>
+      <div class="mySlides fade">
+        <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">RIA - Store</div>
+          <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">RIA - Store</div>
+    <div class="vid">  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754460247?h=237510df71&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Store"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754460247?h=237510df71&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Store"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+      </div>
+      <div class="mySlides fade">
+        <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">YLIAM - Spät in der Nacht</div>
+        <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">YLIAM - Spät in der Nacht</div>
+    <div class="vid">  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754469403?h=6fb0e293b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sp&amp;auml;t in der Nacht.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754469403?h=6fb0e293b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Sp&amp;auml;t in der Nacht.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev1" style="position:absolute;top:55%;left:14%;" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next1" style="position:absolute;top:55%;right:2%;" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <div class="slideshow-container">
+              <div class="mySlides1 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Hartgas - 6 Jahre</div>
+                <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Hartgas - 6 Jahre</div>
+              <div class="vid"> <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754475543?h=2e7b1ba675&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hartgas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754475543?h=2e7b1ba675&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Hartgas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                  </div>
+              </div>
+              <div class="mySlides1 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Bunkernacht - vol 4</div>
+                <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Bunkernacht - vol4</div>
+            <div class="vid">  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754473519?h=90adb5211d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bunkernacht_02"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div class="vid1"><div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754473519?h=90adb5211d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Hartgas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+              </div>
+              <div class="mySlides1 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Bunkernacht - vol 2</div>
+                <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Bunkernacht - vol 2</div>
+            <div class="vid">    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754472218?h=e245d7e731&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+            </div>
+            <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754472218?h=e245d7e731&badge=0&autopause=0&player_id=0&app_id=58479/embed" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Hartgas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+              </div>
+              <div class="mySlides1 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Schattenreich</div>
+                <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Schattenreich</div>
+            <div class="vid">    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754476576?h=7bfa4db646&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+            </div>
+            <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754476576?h=7bfa4db646&badge=0&autopause=0&player_id=0&app_id=58479/embed" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Hartgas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+              </div>
+              <div class="mySlides1 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">TieferTesten - Abschluss</div>
+                <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">TieferTesten - Abschluss</div>
+          <div class="vid">    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754482163?h=f4122e0cf8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TieferTesten"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+          <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754482163?h=f4122e0cf8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Hartgas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+              </div>
+              <div class="mySlides1 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Escape2VINC</div>
+                <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Escape2VINC</div>
+          <div class="vid">    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754481128?h=dbcbed1f6b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ESC_01"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+          <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754481128?h=dbcbed1f6b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Hartgas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+              </div>
+              <div class="mySlides1 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Halloween - Altstadt</div>
+                <div style="position:absolute;top:96%;left:20%; font-size:170%;"  class="text1">Halloween - Altstadt</div>
+          <div class="vid">    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754480811?h=4b7011a4e7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="AltstadtHalloween.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+          <div class="vid1">  <div style="padding:51.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754480811?h=4b7011a4e7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:22%;left:20%;width:72%;height:72%;" title="Hartgas"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+              </div>
+              <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+              <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+              <a class="next1" style="position:absolute;top:55%;right:2%;" onclick="plusSlides1(1)">&#10095;</a>
+              <a class="prev1" style="position:absolute;top:55%;left:14%;" onclick="plusSlides1(-1)">&#10094;</a>
+
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot1" onclick="currentSlide1(8)"></span>
+              <span class="dot1" onclick="currentSlide1(9)"></span>
+              <span class="dot1" onclick="currentSlide1(10)"></span>
+              <span class="dot1" onclick="currentSlide1(11)"></span>
+              <span class="dot1" onclick="currentSlide1(12)"></span>
+              <span class="dot1" onclick="currentSlide1(13)"></span>
+              <span class="dot1" onclick="currentSlide1(14)"></span>
+            </div>
+            <script>
+              var slideIndex = 1;
+              showSlides1(slideIndex);
+              function plusSlides1(n) {
+                showSlides1(slideIndex += n);
+              }
+              function currentSlide1(n) {
+                showSlides1(slideIndex = n);
+              }
+              function showSlides1(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides1");
+                var dots = document.getElementsByClassName("dot1");
+                if(n > slides.length) {
+                  slideIndex = 1
+                }
+                if(n < 1) {
+                  slideIndex = slides.length
+                }
+                for(i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for(i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+              }
+            </script>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <div class="slideshow-container">
+              <div class="mySlides2 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Wartest du kurz?</div>
+              <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/754494222?h=279c709597&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Wartest du kurz.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+              <div class="mySlides2 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Bunkernacht - vol 4</div>
+
+              </div>
+              <div class="mySlides2 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Bunkernacht - vol 2</div>
+
+              </div>
+              <div class="mySlides2 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Schattenreich</div>
+
+              </div>
+              <div class="mySlides2 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">TieferTesten - Abschluss</div>
+
+              </div>
+              <div class="mySlides2 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Escape2VINC</div>
+
+              <div class="mySlides2 fade">
+                <div style="position:relative;top:0%;left:0%; font-size:200%;"  class="text">Halloween - Altstadt</div>
+
+              </div>
+              <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot2" onclick="currentSlide2(15)"></span>
+              <span class="dot2" onclick="currentSlide2(16)"></span>
+              <span class="dot2" onclick="currentSlide2(17)"></span>
+              <span class="dot2" onclick="currentSlide2(18)"></span>
+              <span class="dot2" onclick="currentSlide2(19)"></span>
+              <span class="dot2" onclick="currentSlide2(20)"></span>
+              <span class="dot2" onclick="currentSlide2(21)"></span>
+            </div>
+            <script>
+              var slideIndex = 1;
+              showSlides2(slideIndex);
+              function plusSlides2(n) {
+                showSlides2(slideIndex += n);
+              }
+              function currentSlide2(n) {
+                showSlides2(slideIndex = n);
+              }
+              function showSlides2(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides2");
+                var dots = document.getElementsByClassName("dot2");
+                if(n > slides.length) {
+                  slideIndex = 1
+                }
+                if(n < 1) {
+                  slideIndex = slides.length
+                }
+                for(i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for(i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+              }
+            </script>
+            </div>
+
+          </li>
+          <li class="l-section section">
+            <div class="hire" style="position:absolute; top:1%; left:22%;">
+              <br>
+            <div class="fra">
+              <h2>Welchen Film brauchst du?</h2>
+              </div>
+              <div class="fra1" style="position:relative; top:0%;left:0%; font-size:10px;">
+                <h4>Welchen Film brauchst du?</h4>
+                </div>
+              <!-- checkout formspree.io for easy form setup -->
+<br>
+              <form class="work-request" action="https://formspree.io/f/meqnvpbj" method="POST">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" name="opt-1" type="checkbox" value="Musikvideo">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Musikvideo
+                    </label>
+                    <input id="opt-2" name="opt-2" type="checkbox" value="Hochzeit">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Hochzeit
+                    </label>
+                    <input id="opt-3" name="opt-3" type="checkbox" value="After Movie">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      After Movie
+                    </label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-4" name="opt-4" type="checkbox" value="Kurzfilm">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Kurzfilm
+                    </label>
+                    <input id="opt-5" name="opt-5" type="checkbox" value="Unternehmen">
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Unternehmen
+                    </label>
+                    <input id="opt-6" name="opt-6" type="checkbox" value="Sonstige">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                     Sonstige
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" name="name" type="text" spellcheck="false">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" name="email" type="email" spellcheck="false">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <input type="submit" value="Dicke Action" style="font-size: 20px;font-family: Verdana">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">robin did it</li>
+    <li>Musikvideos</li>
+    <li>Aftermovies</li>
+    <li>Kurzfilme</li>
+    <li>Schreib mir</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>
