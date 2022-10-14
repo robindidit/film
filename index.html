@@ -72,6 +72,12 @@
   .next {display:none}
   .next2 {display:block}
 }
+.punkt1 {display:none}
+.punkt {display:block}
+@media (max-width:1201px){
+  .punkt {display:none}
+  .punkt1 {display:block}
+}
 	
   * {
         box-sizing: border-box
@@ -447,7 +453,7 @@ window.onload = function() {
       <a class="next1" style="position:absolute;top:55%;right:2%;" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    <div style="text-align:center">
+    <div class="punkt"><div style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
@@ -455,7 +461,7 @@ window.onload = function() {
       <span class="dot" onclick="currentSlide(5)"></span>
       <span class="dot" onclick="currentSlide(6)"></span>
       <span class="dot" onclick="currentSlide(7)"></span>
-
+    </div>
     </div>
     <script>
       var slideIndex = 1;
@@ -554,7 +560,7 @@ window.onload = function() {
               
             </div>
             <br>
-            <div style="text-align:center">
+            <div class="punkt"><<div style="text-align:center">
               <span class="dot1" onclick="currentSlide1(8)"></span>
               <span class="dot1" onclick="currentSlide1(9)"></span>
               <span class="dot1" onclick="currentSlide1(10)"></span>
@@ -562,6 +568,7 @@ window.onload = function() {
               <span class="dot1" onclick="currentSlide1(12)"></span>
               <span class="dot1" onclick="currentSlide1(13)"></span>
               <span class="dot1" onclick="currentSlide1(14)"></span>
+            </div>
             </div>
             <script>
               var slideIndex = 1;
@@ -632,7 +639,7 @@ window.onload = function() {
 	      <a class="next1" style="position:absolute;top:55%;right:2%;" onclick="plusSlides2(1)">&#10095;</a>
             </div>
             <br>
-            <div style="text-align:center">
+            <div class="punkt"><div style="text-align:center">
               <span class="dot2" onclick="currentSlide2(15)"></span>
               <span class="dot2" onclick="currentSlide2(16)"></span>
               <span class="dot2" onclick="currentSlide2(17)"></span>
@@ -641,6 +648,7 @@ window.onload = function() {
               <span class="dot2" onclick="currentSlide2(20)"></span>
               <span class="dot2" onclick="currentSlide2(21)"></span>
             </div>
+	    </div>
             <script>
               var slideIndex = 1;
               showSlides2(slideIndex);
